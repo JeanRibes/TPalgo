@@ -13,10 +13,15 @@ public class RechercheElementTableau {
         int valeurCherchee = sc.nextInt();
         int index = -1;
         System.out.println("Vous cherchez la valeur : "+ valeurCherchee);
-        for (int i=0; i<t.length; i++) {
-            if(t[i] == valeurCherchee) {index=i;}
+
+        int i=0;
+        while((t[i] != valeurCherchee) && (i< t.length -1 )) {
+            i++;
         }
-        System.out.println("Index de "+valeurCherchee+" :"+index);
+        if(t[i]==valeurCherchee) {
+            System.out.println(i);
+        }
+        else {System.out.println(-1);}
         
         // jeu de tests
         //ecrire ici les valeurs a tester et pourquoi
