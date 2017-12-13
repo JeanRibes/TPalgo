@@ -12,19 +12,27 @@ public class RechercheElementTableau {
         //obtention de la valeur saisie au clavier
         int valeurCherchee = sc.nextInt();
         int index = -1;
-        System.out.println("Vous cherchez la valeur : "+ valeurCherchee);
+        System.out.println("Vous cherchez la valeur : "+ valeurCherchee+'\n');
 
         int i=0;
         while((t[i] != valeurCherchee) && (i< t.length -1 )) {
             i++;
         }
         if(t[i]==valeurCherchee) {
-            System.out.println(i);
+            System.out.println("La valeur "+valeurCherchee+" est à l'indice "+i);
         }
-        else {System.out.println(-1);}
+        else {System.out.println(valeurCherchee+" n'est pas dans le tableau");}
         
         // jeu de tests
         //ecrire ici les valeurs a tester et pourquoi
+        //"CORRECTION"
+        i=0;
+        int indice = -1;
+        while(i<t.length && indice == -1) {
+            if(t[i]==valeurCherchee) {indice = i;}
+            i++;
+        }
+        System.out.println('\n'+"2e méthode : "+indice);
     }
 
 }
