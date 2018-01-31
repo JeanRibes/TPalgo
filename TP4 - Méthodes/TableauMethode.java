@@ -2,6 +2,9 @@ public class TableauMethode {
     public static void main(String[] args) {
         int[] tab = {-4, 5, -2, 10};
         afficheTab(tab);
+        System.out.println("Indice plus petit: tab["+indicePlusPetit(tab)+"] = "+tab[indicePlusPetit(tab)]);
+        System.out.println("Moyenne du tableau "+moyenne(tab));
+        System.out.println("Écart-type: "+ecartType(tab, moyenne(tab)));
 
     }
     public static void afficheTab(int[] t) {
