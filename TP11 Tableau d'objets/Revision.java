@@ -22,7 +22,6 @@ public class Revision {
 		p.rajout(t6);
 		p.lister();
 		System.out.println("-----------------------triage");
-		p.trier();
 		p.lister();
 	}
 }

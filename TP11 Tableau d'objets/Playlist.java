@@ -43,6 +43,7 @@ public class Playlist {
 		for(int i=0;i<this.playlist.length;i++){changé[i] = this.playlist[i];} //copie tu tableau
 		changé[this.playlist.length] = nouveau; //rajout au bout
 		this.playlist = changé; //swap
+		this.trier();
 	}
 
 }
